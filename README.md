@@ -56,7 +56,6 @@ El objetivo es apoyar decisiones de retención y rentabilidad mediante una arqui
 1. Abrir SQL Server Management Studio (SSMS).
 2. Ejecutar `01_origen/BDcaso5.sql`.
 
-> Nota: este script elimina y recrea `telecom_operacional`, crea tablas y carga datos sintéticos.
 
 ### Paso 2: Data Warehouse
 1. Ejecutar `02_dimensional/telecom_dw_ddl.sql` para crear `telecom_dw`.

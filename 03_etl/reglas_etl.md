@@ -5,7 +5,7 @@
 ## Diseño del Modelo Dimensional
 Antes de detallar el mapeo de datos, es fundamental visualizar la estructura de nuestro Data Warehouse. El siguiente diagrama muestra el diseño de constelación de hechos, donde se aprecia cómo las dimensiones maestras (como cliente, tiempo y plan) alimentan tanto a la tabla de ventas como a la de averías.
 
-![Modelo Dimensional - Esquema Estrella](./02_dimensional/esquema_estrella.png)
+<img width="3253" height="2682" alt="image" src="https://github.com/user-attachments/assets/73b0583d-7b89-4e54-86ec-50f1ee00fe0e" />
 
 Este esquema sirve como hoja de ruta para el proceso ETL, asegurando que las llaves subrogadas y las relaciones se mantengan íntegras durante la carga de datos.
 

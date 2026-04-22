@@ -2,7 +2,7 @@
 
 ## 1. Preguntas de Negocio
 
-A partir del análisis del caso asignado (Empresa de Telecomunicaciones), el grupo definió cinco preguntas de negocio que guían el diseño técnico de la solución. Las primeras cuatro corresponden a los requerimientos mínimos establecidos en el enunciado del proyecto. La quinta constituye el indicador adicional de valor analítico propuesto por el grupo, orientado a traducir un problema operativo en una métrica financiera concreta.
+Este proyecto se enfoca en una empresa de telecomunicaciones que busca optimizar la toma de decisiones mediante el análisis de datos. Se requiere entender cómo interactúan los clientes con los planes contratados, la efectividad de los puntos de venta y el impacto real que tienen los problemas técnicos en la permanencia de los usuarios.
 
 | Pregunta de negocio | Usuario principal | Indicador clave |
 |---------------------|-------------------|-----------------|

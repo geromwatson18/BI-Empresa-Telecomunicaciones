@@ -1,24 +1,27 @@
 # Requerimientos y Preguntas de Negocio
 
-## Preguntas de Negocio
-Para resolver la problemática de la empresa, se definieron las siguientes preguntas estratégicas:
-1. ¿Qué planes y segmentos de clientes generan mayores ingresos por región y periodo?
-2. ¿Cómo se relacionan las averías o tickets de soporte con la cancelación del servicio?
-3. ¿Qué canales de venta son más efectivos según tipo de plan y perfil del cliente?
-4. ¿Qué combinaciones de plan, zona y antigüedad presentan mayor riesgo de churn?
-5. ¿Cuánto dinero pierde la empresa por clientes que cancelan tras reportar fallas recurrentes controlables?
+El diseño de este Data Warehouse no busca simplemente almacenar datos, sino resolver un problema de "ceguera" en la empresa de telecomunicaciones. Actualmente la gerencia sabe que los clientes cancelan sus contratos (churn), pero no pueden medir con exactitud cuánto de esa fuga es culpa de un mal servicio técnico.
 
-## Usuarios Principales y KPIs
-El diseño del modelo dimensional está orientado a tres perfiles principales:
+Para orientar el modelo a resultados financieros, definimos estas cinco preguntas clave:
 
-**1. Gerencia de Operaciones**
-* **KPIs:** Volumen de averías, Tasa de controlabilidad.
-* **Uso:** Evaluar si las fallas técnicas provienen de factores internos (controlables) o externos, para mejorar la infraestructura de red.
+1. **Rendimiento por zona:** ¿Cuáles planes y segmentos de clientes generan mayores ingresos dependiendo de la región y el periodo del año?
+2. **Impacto del soporte técnico:** ¿Existe un patrón directo entre la cantidad de tickets de avería reportados y la decisión del cliente de cancelar el servicio?
+3. **Efectividad de canales de venta:** ¿Qué rinde mejor para cada perfil de cliente, la tienda virtual o las sucursales físicas?
+4. **Segmentación de riesgo:** ¿Qué combinaciones específicas de plan, zona geográfica y antigüedad de contrato presentan la mayor probabilidad de churn?
+5. **Valor financiero de las averías (Métrica principal):** ¿Cuánto dinero exacto pierde la empresa mensualmente por clientes que cancelan tras sufrir fallas recurrentes que la empresa sí tenía la capacidad de controlar?
 
-**2. Ventas y Retención**
-* **KPIs:** Ingresos por canal, Tasa de churn por segmento.
-* **Uso:** Analizar el rendimiento de la tienda virtual frente a las sucursales físicas y detectar patrones en los clientes que abandonan la empresa.
+## Usuarios del Modelo y KPIs Asignados
 
-**3. Dirección Financiera**
-* **KPIs:** Ingresos totales, Pérdida económica por averías controlables.
-* **Uso:** Cuantificar el impacto real del mal servicio técnico sobre los ingresos de la compañía.
+El dashboard final y la estructura de datos se pensaron para tres departamentos específicos:
+
+**Gerencia de Operaciones**
+* **Objetivo:** Auditar la calidad de la red y el servicio técnico.
+* **KPIs:** Volumen total de averías y Tasa de controlabilidad (porcentaje de fallas que son culpa de la infraestructura interna vs. factores externos).
+
+**Ventas y Retención**
+* **Objetivo:** Monitorear el rendimiento comercial y adelantarse a la fuga de clientes.
+* **KPIs:** Ingresos por canal de venta (físico vs. web) y Tasa de churn segmentada por perfil de consumo.
+
+**Dirección Financiera**
+* **Objetivo:** Medir la rentabilidad real de la operación.
+* **KPIs:** Ingresos totales facturados y la Pérdida monetaria por mal servicio (el cálculo exacto de ingresos que se dejaron de percibir por averías controlables).

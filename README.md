@@ -4,8 +4,8 @@
 
 ## 1. Descripción del Problema de Negocio
 Este proyecto desarrolla una solución de Inteligencia de Negocios para analizar el comportamiento de clientes de una empresa de telecomunicaciones en Costa Rica, con énfasis en:
-- churn (cancelación del servicio),
-- averías/incidencias técnicas,
+- churn.
+- averías/incidencias técnicas.
 - ventas por plan, canal y región.
 
 El objetivo es apoyar decisiones de retención y rentabilidad mediante una arquitectura BI completa: origen transaccional, proceso ETL, Data Warehouse y visualización analítica.

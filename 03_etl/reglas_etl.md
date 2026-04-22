@@ -1,5 +1,14 @@
 # Reglas de Transformación ETL
 
+# Reglas de Transformación ETL
+
+## Diseño del Modelo Dimensional
+Antes de detallar el mapeo de datos, es fundamental visualizar la estructura de nuestro Data Warehouse. El siguiente diagrama muestra el diseño de constelación de hechos, donde se aprecia cómo las dimensiones maestras (como cliente, tiempo y plan) alimentan tanto a la tabla de ventas como a la de averías.
+
+![Modelo Dimensional - Esquema Estrella](./02_dimensional/esquema_estrella.png)
+
+Este esquema sirve como hoja de ruta para el proceso ETL, asegurando que las llaves subrogadas y las relaciones se mantengan íntegras durante la carga de datos.
+
 ## Tabla de Mapeo ETL
 
 | Campo destino | Campo origen | Regla aplicada | Comentarios |

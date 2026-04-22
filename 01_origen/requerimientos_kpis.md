@@ -12,8 +12,6 @@ A partir del análisis del caso asignado (Empresa de Telecomunicaciones), el gru
 | 4. ¿Qué combinaciones de plan, zona y antigüedad presentan mayor riesgo de churn? | Ventas y Retención | Segmentos con mayor proporción de clientes inactivos |
 | 5. ¿Cuánto dinero pierde la empresa por clientes que cancelan tras reportar fallas recurrentes controlables? | Dirección Financiera | Ingreso perdido por churn atribuible a fallas controlables |
 
-**Justificación de las preguntas:**  
-Las cinco preguntas fueron seleccionadas porque atacan los dos problemas centrales de cualquier empresa de telecomunicaciones: la retención de clientes y la rentabilidad. Las preguntas 1 y 3 permiten entender el comportamiento comercial (cuánto se vende, por dónde y a quién). Las preguntas 2 y 4 abordan la relación entre calidad del servicio y permanencia del cliente, lo cual es clave para la gerencia de operaciones. La pregunta 5 es la que mayor valor estratégico aporta porque convierte datos operativos de averías en una estimación del ingreso perdido atribuible a fallas que la empresa pudo haber evitado, lo cual permite priorizar inversiones en infraestructura con base en un criterio financiero real.
 
 ## 2. Perfiles de Usuario
 

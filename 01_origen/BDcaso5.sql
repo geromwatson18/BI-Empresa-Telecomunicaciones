@@ -31,7 +31,7 @@ CREATE TABLE cliente (
     estado VARCHAR(10)
 );
 
-CREATE TABLE _plan (
+CREATE TABLE plan (
     id_plan INT PRIMARY KEY,
     nombre_plan VARCHAR(50),
     tipo_plan VARCHAR(20),
@@ -53,7 +53,7 @@ CREATE TABLE contrato (
     fecha_fin DATE,
     estado VARCHAR(10),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
-    FOREIGN KEY (id_plan) REFERENCES _plan(id_plan)
+    FOREIGN KEY (id_plan) REFERENCES plan(id_plan)
 );
 
 CREATE TABLE venta (
@@ -64,7 +64,7 @@ CREATE TABLE venta (
     fecha_venta DATETIME,
     monto DECIMAL(10,2),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
-    FOREIGN KEY (id_plan) REFERENCES _plan(id_plan),
+    FOREIGN KEY (id_plan) REFERENCES plan(id_plan),
     FOREIGN KEY (id_tienda) REFERENCES tienda(id_tienda)
 );
 
@@ -81,7 +81,7 @@ CREATE TABLE averia (
 -- 3. DATOS MAESTROS
 ------------------------------------------------------------
 
-INSERT INTO _plan VALUES
+INSERT INTO plan VALUES
 (1, 'Plan Básico', 'Postpago', 15000),
 (2, 'Plan Plus', 'Postpago', 25000),
 (3, 'Plan Ultra 5G', 'Postpago', 40000),
